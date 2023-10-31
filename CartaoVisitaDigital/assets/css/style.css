@@ -1,0 +1,74 @@
+:root {
+    --default-font: "Garet", sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Garet", sans-serif;
+    --nav-font: "Garet", sans-serif;
+  }
+  
+  /* Global Colors */
+:root {
+    --background-color: #EFE7DD;
+    --geen-blue-soft-color: #2DE0CA;
+    --dark-blue: #023047;
+}
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+  }
+
+  /* Estilo para o cabeçalho */
+  header {
+    position: fixed; /* Fixa o cabeçalho */
+    top: 0;
+    right: 0; /* Alinha no canto superior direito */
+    padding: 10px; 
+  }
+  
+  /* Estilo para o botão de compartilhar */
+  #share-button {
+    background-color: var(--background-color);
+    border: none; 
+    border-radius: 50%; 
+    width: 46px; 
+    height: 46px; 
+    display: flex; /* Permite centralizar o ícone verticalmente */
+    justify-content: center; /* Centraliza o ícone horizontalmente */
+    align-items: center; /* Centraliza o ícone verticalmente */
+  }
+  
+  /* Estilo para o ícone de compartilhar dentro do botão */
+  #share-button img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /*background image*/
+
+  
+  /* Estilo para o fundo de imagem */
+  .image-background {
+    background-image: url('../img/praia-bg-inteiro.png'); /* Substitua pelo caminho correto da sua imagem de praia */
+    background-size: cover; /* Redimensiona a imagem para cobrir a seção inteira */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    height: 500px;
+  }
+  
+  /* Estilo para a segunda div em azul (ignorando por enquanto) */
+  .blue-background {
+    background-color: var(--geen-blue-soft-color); /* Substitua pela cor desejada */
+    position: relative;
+    height: 100vh;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .hero h2 {
+      font-size: 32px;
+    }
+  
+    .hero p {
+      font-size: 18px;
+    }
+  }  
