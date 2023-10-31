@@ -258,7 +258,15 @@ a{
 }
 
 .m-30{
-    margin-inline: 30px;
+    margin: 30px;
+}
+
+.m-20{
+    margin: 20px;
+}
+
+.m-10{
+    margin-inline: 10px;
 }
 
 .mr-5{
@@ -396,6 +404,16 @@ a{
 .px-20{
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.px-10{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.px-5{
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .m-auto{

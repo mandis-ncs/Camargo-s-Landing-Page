@@ -11,11 +11,17 @@
     --dark-blue: #023047;
 }
 
+html {
+    overflow-x: hidden;
+}
+
   body {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
     font-family: 'Garet';
+
+    overflow: hidden;
   }
 
   /* Estilo para o cabeçalho */
@@ -40,8 +46,8 @@
   
   /* Estilo para o ícone de compartilhar dentro do botão */
   #share-button img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: auto;
   }
   
 
@@ -53,7 +59,7 @@
     background-size: cover; /* Redimensiona a imagem para cobrir a seção inteira */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 90vh;
   }
   
   /* Estilo para a segunda div em azul (ignorando por enquanto) */
@@ -63,7 +69,8 @@
   }
   
   .container {
-    padding: 40px;
+    padding-inline: 40px;
+    padding-top: 40px;
   }
 
   .logo {
@@ -95,36 +102,66 @@
     height: 40px;
   }
 
-  #main-button {
-    background-color: var(--geen-blue-soft-color);
-    border: none; 
-    border-radius: 100px; 
-    
-    font-family: 'Garet';
-    font-weight: bold;
-    color: var(--dark-blue);
-
+  #main-button {    
     width: 170px; 
     height: 40px; 
-
-    display: flex; /* Permite centralizar o ícone verticalmente */
-    justify-content: center; /* Centraliza o ícone horizontalmente */
-    align-items: center; /* Centraliza o ícone verticalmente */
-
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
+  }
 
+  .green-shadow {
     box-shadow: -10px 7px 2px 4px rgba(45, 224, 202, 0.3);
   }
+
+  .green-button {
+    background-color: var(--geen-blue-soft-color);
+    border: none; 
+    border-radius: 100px; 
+    font-family: 'Garet';
+    font-weight: bold;
+    color: var(--dark-blue);
+    display: flex; /* Permite centralizar o ícone verticalmente */
+    justify-content: center; /* Centraliza o ícone horizontalmente */
+    align-items: center; /* Centraliza o ícone verticalmente */
+  }
   
+/*Parte do meio*/
+
+.left-image, .right-image {
+    width: 70%; /* Define a largura das imagens como metade do contêiner */
+    max-width: 200px; /* Define uma largura máxima se necessário */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.more-button {
+    background-color: var(--dark-blue);
+    border: none; 
+    border-radius: 20px; 
+    width: 110px; 
+    height: 60px; 
+    display: flex; /* Permite centralizar o ícone verticalmente */
+    justify-content: center; /* Centraliza o ícone horizontalmente */
+    align-items: center; /* Centraliza o ícone verticalmente */
+    margin: 10px;
+  }
+  
+  /* Estilo para o ícone de compartilhar dentro do botão */
+  .more-button img {
+    width: auto;
+    height: 30px;
+  }
+
+
+
   @media (max-width: 768px) {
-    .hero h2 {
-      font-size: 32px;
+    .container {
+        margin: 0; /* Remova o padding ou ajuste conforme necessário */
     }
-  
-    .hero p {
-      font-size: 18px;
+
+    h4 {
+       font-family: 'Garet'; 
+       color: var(--dark-blue);
     }
   }  
