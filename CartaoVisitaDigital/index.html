@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="assets/css/typo.css" />
 
     <title>Camargo's Pousada e Festas</title>
+
+    <script src="assets/js/main.js"></script>
+
   </head>
+
   <body>
     <header>
       <button id="share-button">
@@ -27,37 +31,45 @@
         <!-- Contatos -->
         <div class="image-background">
           <div class="container d-flex center col">
-            <img class="logo" src="assets/img/Camargos-logo-blue.png" alt="" />
-            <img class="letter" src="assets/img/Camargos-letter.png" alt="" />
+            <img class="logo" src="assets/img/Camargos-logo-blue.png" alt="Logo Camargos" />
+            <img class="letter" src="assets/img/Camargos-letter.png" alt="Letreiro Camargos" />
 
             <div class="mt-20">
               <button id="main-button" class="green-shadow green-button center">
-                Contate-nos
+                <a href="https://api.whatsapp.com/send?phone=+5513981957811&text=Oii" target="_blank"> <!-- CONTATO AQUI  -->
+                  Contate-nos
+                </a>
               </button>
             </div>
           </div>
 
           <div class="row m-20 center">
             <button class="contact-button center">
-              <img
-                class="contact-icon"
-                src="assets/img/whatsapp-icon-bege.png"
-                alt=""
-              />
+              <a href="https://api.whatsapp.com/send?phone=+5513981957811&text=Oii" target="_blank"> <!-- WHATSAPP AQUI  -->
+                <img
+                  class="contact-icon"
+                  src="assets/img/whatsapp-icon-bege.png"
+                  alt="WhatsApp icon"
+                />
+              </a>
             </button>
             <button class="contact-button center">
-              <img
-                class="contact-icon"
-                src="assets/img/telefone-icon-blue-soft.png"
-                alt=""
-              />
+              <a href="tel:+5513981957811"> <!-- CELULAR AQUI  -->
+                <img
+                  class="contact-icon"
+                  src="assets/img/telefone-icon-blue-soft.png"
+                  alt="Telefone icon"
+                />
+              </a>
             </button>
             <button class="contact-button center">
-              <img
-                class="contact-icon"
-                src="assets/img/email-icon-blue-soft.png"
-                alt=""
-              />
+              <a href="mailto:nbonette@gmail.com"> <!-- EMAIL AQUI  -->
+                <img
+                  class="contact-icon"
+                  src="assets/img/email-icon-blue-soft.png"
+                  alt="Email icon"
+                />
+              </a>
             </button>
           </div>
 
@@ -66,24 +78,28 @@
             <img
               class="left-image"
               src="assets/img/detalhe-onda-linha.png"
-              alt=""
+              alt="Decoracao de onda"
             />
             <h4 class="mx-20 green-button center px-10">Mais</h4>
             <img
               class="right-image"
               src="assets/img/detalhe-onda-linha.png"
-              alt=""
+              alt="Decoracao de onda"
             />
           </div>
 
           <div class="row m-20 center">
-            <button class="more-button center">
-              <img src="assets/img/pix-icon-blue-soft.png" alt="" />
-              <img src="assets/img/copiar-icon-bege.png" alt="" />
+            <button class="more-button center" id="copiarPixButton"> 
+              <a class="center" href="#" onclick="copiarTexto('13981957811')"> <!-- PIX AQUI  -->
+                <img src="assets/img/pix-icon-blue-soft.png" alt="Pix icon" /> 
+                <img src="assets/img/copiar-icon-bege.png" alt="Copiar icon" />
+              </a>
             </button>
             <button class="more-button row px-10 center">
-              <img src="assets/img/maps-icon-blue-soft.png" alt="" />
-              <p>Google Maps</p>
+              <a class="row center" href="https://www.google.com/maps?q=-25.0297881,-47.9128129" target="_blank">  <!-- ENDEREÇO AQUI  -->
+                <img src="assets/img/maps-icon-blue-soft.png" alt="Maps icon" />
+                <p>Google Maps</p>
+              </a>
             </button>
           </div>
 
@@ -91,30 +107,36 @@
           <!-- Onda verde -->
           <div class="wave-image-background"></div>
 
-          <!-- Parte verde, Saiba mais section, fotos e redes sociais -->
+          <!-- Saiba mais section - fotos e redes sociais -->
           <div class="seashell-image-background">
             <div class="center mb-20">
               <h3>Saiba Mais</h3>
               <p>Conheça nosso espaço e se apaixone</p>
-              <button class="see-more-button mt-20">Veja fotos ></button>
+              <button class="see-more-button mt-20">
+                <a href="galeria.html">Veja fotos ></a> <!-- GALERIA AQUI  -->
+              </button>
             </div>
 
             <div class="col center mx-20 mt-30">
               <p>Nos siga nas redes sociais</p>
               <div class="row center mt-10 mb-30">
                 <button class="contact-button mt-10 center">
-                  <img
-                    class="contact-icon"
-                    src="assets/img/insta-icon-bege.png"
-                    alt=""
-                  />
+                  <a href="https://www.instagram.com/chacarapenaareia" target="_blank"> <!-- INSTAGRAM AQUI  -->
+                    <img
+                      class="contact-icon"
+                      src="assets/img/insta-icon-bege.png"
+                      alt="Instagram icon"
+                    />
+                  </a>
                 </button>
                 <button class="contact-button center">
-                  <img
-                    class="contact-icon"
-                    src="assets/img/face-icon-bege.png"
-                    alt=""
-                  />
+                  <a href="https://www.instagram.com/chacarapenaareia" target="_blank"> <!-- FACEBOOK AQUI  -->
+                    <img
+                      class="contact-icon"
+                      src="assets/img/face-icon-bege.png"
+                      alt="Facebook Icon"
+                    />
+                  </a>
                 </button>
               </div>
             </div>
@@ -122,24 +144,25 @@
           
         </div>
       </section>
-      <!-- Outras seções e conteúdo principal continuam aqui -->
     </main>
 
     <footer>
       <div class="col center m-30">
         <div class="row center mb-20">
           <button class="other-button row px-10 center">
-            <img src="assets/img/agenda-icon-bege.png" alt="" />
-            <p>Salvar Contato</p>
+            <a class="row center" href="vcard/Chacara.vcf"> <!-- VSF --- SALVAR NA AGENDA AQUI  -->
+              <img src="assets/img/agenda-icon-bege.png" alt="Agenda icon" /> 
+              <p>Salvar Contato</p>
+            </a>
           </button>
-          
+
           <button class="other-button row px-10 center">
-            <img src="assets/img/qrcode-icon-bege.png" alt="" />
+            <img src="assets/img/qrcode-icon-bege.png" alt="QrCode" /> <!-- QRCODE AQUI  -->
             <p>QrCode</p>
           </button>
         </div>
         
-        <img class="logo-rodape" src="assets/img/camargos-logo-deitado.png" alt="">
+        <img class="logo-rodape" src="assets/img/camargos-logo-deitado.png" alt="Logo Camargos">
         
       </div>      
     </footer>

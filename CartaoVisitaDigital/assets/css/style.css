@@ -46,8 +46,15 @@ footer img {
   height: 200px;
 }
 
+a {
+  text-decoration: none; 
+}
+
+
 /* Estilo para o botão de compartilhar */
 #share-button {
+  margin-top: 20px;
+  margin-right: 40px;
   background-color: var(--background-color);
   border: none;
   border-radius: 50%;
@@ -62,6 +69,13 @@ footer img {
 #share-button img {
   width: 25px;
   height: auto;
+}
+
+@media (max-width: 450px) {
+  #share-button {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
 }
 
 /*background image*/
@@ -251,7 +265,7 @@ footer .other-button {
   background-color: var(--dark-blue);
   border: 2px solid var(--geen-blue-soft-color);
   border-radius: 20px;
-  width: 130px;
+  width: 120px;
   height: 60px;
   margin: 10px;
 }
