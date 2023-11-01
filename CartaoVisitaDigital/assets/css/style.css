@@ -78,7 +78,7 @@ footer img {
 .wave-image-background {
   background-image: url('../img/onda-bg-blue-soft-cortado.png');
   background-size: cover;
-  background-position: bottom;
+  background-position: top;
   background-repeat: no-repeat;
   height: 50vh; /* Use porcentagem para a altura para telas maiores */
   width: 100vw;
@@ -92,6 +92,13 @@ footer img {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media (max-width: 450px) {
+  .wave-image-background {
+    height: 20vh; 
+  }
+}
+
 
 /*@media (max-width: 450px) {
   .image-background {
@@ -220,6 +227,10 @@ footer img {
   margin: 0px;
 }
 
+.seashell-image-background p {
+  padding-inline: 20px;
+}
+
 .seashell-image-background .see-more-button {
   background-color: var(--dark-blue);
   border: none;
@@ -231,8 +242,32 @@ footer img {
   font-size: medium;
 }
 
-.blue {
-  background-color: var(--geen-blue-soft-color);
+footer .logo-rodape {
+  width: auto;
+  height: 50px;
+}
+
+footer .other-button {
+  background-color: var(--dark-blue);
+  border: 2px solid var(--geen-blue-soft-color);
+  border-radius: 20px;
+  width: 130px;
+  height: 60px;
+  margin: 10px;
+}
+
+footer .other-button img {
+  width: auto;
+  height: 30px;
+}
+
+footer .other-button p {
+  padding: 5px;
+  margin: 0;
+  color: var(--background-color);
+  font-family: 'Garet';
+  font-weight: bold;
+  font-size: 14px;
 }
 
 @media (max-width: 768px) {
