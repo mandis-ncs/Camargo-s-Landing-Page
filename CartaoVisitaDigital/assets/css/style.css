@@ -59,15 +59,31 @@ html {
     background-size: cover; /* Redimensiona a imagem para cobrir a seção inteira */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat;
-    height: 90vh;
-  }
-  
-  /* Estilo para a segunda div em azul (ignorando por enquanto) */
-  .blue-background {
-    background-color: var(--geen-blue-soft-color); 
     height: 100vh;
   }
   
+
+  .wave-image-background {
+    background-image: url('../img/onda-bg-blue-soft-cortado.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100px; /* Defina uma altura mínima para a div */
+    height: 55vh; /* Use porcentagem para a altura para telas maiores */
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 450px) {
+  .image-background {
+    height: 80vh;
+  }
+
+  .wave-image-background {
+      height: 10vh; /* Ajuste a altura para telas menores */
+  } 
+}
   .container {
     padding-inline: 40px;
     padding-top: 40px;
@@ -160,6 +176,29 @@ html {
     font-family: 'Garet';
     font-weight: normal;
   }
+
+/*Blue Background - Inferior*/
+  .blue-background {
+    background-color: var(--geen-blue-soft-color);
+    height: 100vh;
+    position: relative;
+}
+
+.blue-background::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-image: url('../img/onda-bg-blue-soft.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2; /* Adicione um valor de z-index maior aqui */
+    margin-top: -127 !important;
+}
+
 
 
   @media (max-width: 768px) {
