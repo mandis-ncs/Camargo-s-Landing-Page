@@ -11,7 +11,7 @@ function copiarTexto(texto) {
 }
 
 
-// modal.js
+// MODAL SHARE BUTTON
 const modal = document.getElementById("share-modal");
 const shareButton = document.getElementById("share-button");
 const closeButton = document.getElementById("close-modal");
@@ -19,7 +19,7 @@ const closeButton = document.getElementById("close-modal");
 modal.style.display = "none"; // Oculta o modal inicialmente
 
 shareButton.addEventListener("click", () => {
-  modal.style.display = "block"; // Exibe o modal quando o botão é clicado
+  modal.style.display = "flex"; // Exibe o modal quando o botão é clicado
 });
 
 closeButton.addEventListener("click", () => {
@@ -29,6 +29,28 @@ closeButton.addEventListener("click", () => {
 window.addEventListener("click", (event) => {
   if (event.target === modal) {
     modal.style.display = "none";
+  }
+});
+
+
+// MODAL QRCode
+const qrcodeButton = document.getElementById("qrcode-button");
+const qrcodeModal = document.getElementById("qrcode-modal");
+const closeQrcodeModal = document.getElementById("close-qrcode-modal");
+
+qrcodeModal.style.display = "none"; // Oculta o modal inicialmente
+
+qrcodeButton.addEventListener("click", () => {
+  qrcodeModal.style.display = "flex";
+});
+
+closeQrcodeModal.addEventListener("click", () => {
+  qrcodeModal.style.display = "none";
+});
+
+window.addEventListener("click", (event) => {
+  if (event.target === qrcodeModal) {
+    qrcodeModal.style.display = "none";
   }
 });
 
