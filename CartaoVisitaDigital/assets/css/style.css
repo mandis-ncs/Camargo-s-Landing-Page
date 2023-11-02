@@ -94,7 +94,7 @@ a {
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
-  height: 50vh; /* Use porcentagem para a altura para telas maiores */
+  height: 20vh; /* Use porcentagem para a altura para telas maiores */
   width: 100vw;
   margin: -1px;
 }
@@ -107,11 +107,6 @@ a {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 450px) {
-  .wave-image-background {
-    height: 20vh; 
-  }
-}
 
 
 /*@media (max-width: 450px) {

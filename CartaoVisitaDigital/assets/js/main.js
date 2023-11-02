@@ -13,23 +13,31 @@ function copiarTexto(texto) {
 
 // main.js
 
+
+//fetch modal.html e carrega na div modalContainer
+
 function loadModal() {
     fetch('../../modal.html')
         .then(response => response.text())
         .then(data => {
-            document.getElementById('modalContainer').innerHTML = data;
-            // Aqui você pode adicionar código para controlar o modal ou aplicar estilos adicionais, se necessário.
+            document.getElementById('modalContainer').innerHTML = data; 
         })
         .catch(error => console.error('Erro ao carregar o modal:', error));
 }
 
-var linkAbrirModal = document.getElementById("abrirModal");
-            var modal = document.getElementById("myModal");
-            var fecharModal = document.getElementById("fecharModal");
+
+// button para abrir modal
+
+                                            // id do button 
+var linkAbrirModal = document.getElementById("share-button");
+            var modal = document.getElementById("meuModalNovo");
+            var fecharModal = document.getElementById("fecharModalNovo");
         
+            // abre modal ao clicar
             linkAbrirModal.addEventListener("click", function(event) {
                 event.preventDefault();
-                modal.style.display = "block";
+                loadModal(); // carrega o modal
+                modal.style.display = "block"; // none -> block
             });
         
             fecharModal.addEventListener("click", function() {
