@@ -1,0 +1,58 @@
+@import url(style.css);
+
+.dark-blue-background {
+    background-color: var(--dark-blue);
+    background-image: url('../img/seashell-bg.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+}
+
+.home-button {
+  background-color: var(--geen-blue-soft-color);
+  border: none;
+  border-radius: 100px;
+  font-family: 'Garet';
+  font-weight: bold;
+  color: var(--dark-blue);
+
+  padding-inline: 20px;
+  padding-block: 5px;
+}
+
+
+
+/* Estilos básicos para a galeria */
+/* Estilos para a galeria usando Grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.image {
+    cursor: pointer;
+}
+
+/* Outros estilos (os estilos anteriores permanecem os mesmos) */
+
+/* Estilos para a imagem */
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para a legenda */
+.caption {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.isotope-layout img{
+    width: 50px;
+    height: auto;
+}

@@ -30,6 +30,7 @@ header {
   top: 0;
   right: 0; /* Alinha no canto superior direito */
   padding: 10px;
+  width: 100vw;
 }
 
 footer {
@@ -53,8 +54,13 @@ a {
 
 /* Estilo para o botão de compartilhar */
 #share-button {
-  margin-top: 20px;
+  position: fixed;
+  top: 10;
+  right: 0;
+
+  margin-top: 30px;
   margin-right: 40px;
+
   background-color: var(--background-color);
   border: none;
   border-radius: 50%;
@@ -73,8 +79,8 @@ a {
 
 @media (max-width: 450px) {
   #share-button {
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 20px;
+    margin-right: 40px;
   }
 }
 
