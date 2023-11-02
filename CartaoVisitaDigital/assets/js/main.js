@@ -11,75 +11,24 @@ function copiarTexto(texto) {
 }
 
 
-// main.js
+// modal.js
+const modal = document.getElementById("share-modal");
+const shareButton = document.getElementById("share-button");
+const closeButton = document.getElementById("close-modal");
 
+modal.style.display = "none"; // Oculta o modal inicialmente
 
-//fetch modal.html e carrega na div modalContainer
+shareButton.addEventListener("click", () => {
+  modal.style.display = "block"; // Exibe o modal quando o botão é clicado
+});
 
-function loadModal() {
-    fetch('../../modal.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('modalContainer').innerHTML = data; 
-        })
-        .catch(error => console.error('Erro ao carregar o modal:', error));
-}
+closeButton.addEventListener("click", () => {
+  modal.style.display = "none"; // Fecha o modal
+});
 
+window.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
 
-// button para abrir modal
-
-                                            // id do button 
-var linkAbrirModal = document.getElementById("share-button");
-            var modal = document.getElementById("meuModalNovo");
-            var fecharModal = document.getElementById("fecharModalNovo");
-        
-            // abre modal ao clicar
-            linkAbrirModal.addEventListener("click", function(event) {
-                event.preventDefault();
-                loadModal(); // carrega o modal
-                modal.style.display = "block"; // none -> block
-            });
-        
-            fecharModal.addEventListener("click", function() {
-                modal.style.display = "none";
-            });
-        
-            modal.addEventListener("click", function(event) {
-                if (event.target === modal) {
-                    modal.style.display = "none";
-                }
-            });
-
-    
-    
-    var linkAbrirModalNovo = document.getElementById("abrirModalNovo");
-    var meuModalNovo = document.getElementById("meuModalNovo");
-
-    linkAbrirModalNovo.addEventListener("click", function(event) {
-        console.log('Clique no botão Share');
-        event.preventDefault();
-        loadModal();
-        meuModalNovo.style.display = "block";
-    });
-
-    var fecharModalNovo = document.getElementById("fecharModalNovo");
-
-    fecharModalNovo.addEventListener("click", function() {
-        meuModalNovo.style.display = "none";
-    });
-
-
-
-    var shareButton = document.getElementById("share-button");
-    var modalContainer = document.getElementById("modalContainer");
-    
-    shareButton.addEventListener("click", function(event) {
-        event.preventDefault();
-        var targetId = shareButton.getAttribute("data-target");
-        var modal = document.getElementById(targetId);
-        
-        if (modal) {
-            loadModal();
-            modal.style.display = "block";
-        }
-    });
