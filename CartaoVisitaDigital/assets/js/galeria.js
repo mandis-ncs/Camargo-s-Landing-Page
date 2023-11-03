@@ -24,20 +24,3 @@
 
 
 
-  
-   /**
-   * Init isotope layout and filters
-   */
-   $(document).ready(function() {
-    // Initialize Isotope
-    var $listing = $('.gallery').isotope({
-      itemSelector: '.isotope-item',
-      layoutMode: 'fitRows'
-    });
-
-    // Filter button click event
-    $("#filters").on("click", "button", function() {
-      var filterValue = $(this).attr('data-filter');
-      $listing.isotope({ filter: filterValue });
-    });
-  });
