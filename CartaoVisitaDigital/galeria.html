@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="assets/css/modal.css" />
     <link rel="stylesheet" href="assets/css/galeria.css" />
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"/>
+
     <title>Camargo's Pousada e Festas</title>
 
   </head>
@@ -71,18 +74,11 @@
 
 
     <!-- Galeria code  -->
-     <!-- Pousada - Portfolio Section - Home Page -->
      <section id="portfolio" class="portfolio">
-
-      <!--  Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Pousada</h2>
-        <p>Conheça e se apaixone pelo nosso espaço!</p>
-      </div><!-- End Section Title -->
 
       <div class="container">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <div class="isotope-layout" data-default-filter="*" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
@@ -92,23 +88,27 @@
           </ul><!-- End Portfolio Filters -->
 
           
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
+          <div class="wrap gallery" data-aos="fade-up" data-aos-delay="200">
+            
+    
             <!-- FOTO 1 -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pousada">
-              <img src="assets/img/fotos/Pousada/pousada-1.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Pousada</h4>
-                <p>Frente da pousada</p>
-                <a href="assets/img/fotos/Pousada/pousada-1.jpeg" title="Pousda" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+            <a href="assets/img/fotos/Pousada/pousada-1.jpeg" class="filter-pousada">
+              <img src="assets/img/fotos/Pousada/pousada-1.jpeg" alt="">
+              <p>Frente da pousada 2</p>
+            </a>
 
-  
+            <!-- FOTO 2 -->
+            <a href="assets/img/fotos/Paisagem/paisagem-1.jpeg" class="filter-pousada">
+              <img src="assets/img/fotos/Paisagem/paisagem-1.jpeg" alt="">
+              <p>Frente da pousada 2</p>
+            </a>
+            
+
+         </div> 
 
 
-          </div>  
+
+
         </div>    
       </div>
     </section>    
@@ -129,7 +129,14 @@
   
    <!-- JS import  -->
    <script src="assets/js/main.js"></script>
-   <script src="assets/js/galeria.js"></script>
-   
+   <script src="assets/js/galeria.js"></script> 
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script> 
+
+   <script>
+    lightGallery(document.querySelector('.gallery'));
+   </script>
+
   </body>
 </html>      

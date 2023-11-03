@@ -20,39 +20,35 @@
   padding-block: 5px;
 }
 
-
-
-/* Estilos básicos para a galeria */
-/* Estilos para a galeria usando Grid */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    justify-items: center;
+.gallery{
+    margin: 0px;
 }
 
-.image {
-    cursor: pointer;
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* Outros estilos (os estilos anteriores permanecem os mesmos) */
-
-/* Estilos para a imagem */
-.image img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Estilos para a legenda */
-.caption {
-    background-color: #333;
-    color: #fff;
+.filter-pousada {
+    width: 100%;
     padding: 5px;
-    font-size: 14px;
+    overflow: hidden;
 }
 
-.isotope-layout img{
-    width: 50px;
-    height: auto;
+.filter-pousada img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.portfolio-info {
+    text-align: center;
+}
+
+
+@media (min-width: 600px) {
+    .filter-pousada {
+        width: 33.33%;
+    }
 }

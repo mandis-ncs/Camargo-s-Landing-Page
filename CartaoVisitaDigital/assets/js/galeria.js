@@ -23,6 +23,9 @@
       });
 
 
+/*LIGHTBOX JS*/
+lightgallery
+
   
    /**
    * Init isotope layout and filters
