@@ -78,36 +78,32 @@
 
       <div class="container">
 
-        <div class="isotope-layout" data-default-filter="*" data-sort="original-order">
+        <div class="isotope-layout" data-layout="masonry" data-default-filter="*" data-sort="original-order">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-pousada">Pousada</li>
-            <li data-filter=".filter-paisagem">Paisagem</li>
-            <li data-filter=".filter-interior">Interior</li>
-          </ul><!-- End Portfolio Filters -->
+          <div id="filters" class="button-group filter-button-group row center">
+            <button data-filter="*">show all</button>
+            <button data-filter=".filter-paisagem">Paisagem</button>
+            <button data-filter=".filter-pousada">Pousada</button>
+            <button data-filter=".filter-interior">Interior</button>
+          </div>
 
           
-          <div class="wrap gallery" data-aos="fade-up" data-aos-delay="200">
+          <div class="gallery wrap" data-aos="fade-up" data-aos-delay="200">
             
     
             <!-- FOTO 1 -->
-            <a href="assets/img/fotos/Pousada/pousada-1.jpeg" class="filter-pousada">
+            <a href="assets/img/fotos/Pousada/pousada-1.jpeg" class="filter isotope-item filter-pousada" data-category="filter-pousada">
               <img src="assets/img/fotos/Pousada/pousada-1.jpeg" alt="">
               <p>Frente da pousada 2</p>
             </a>
 
             <!-- FOTO 2 -->
-            <a href="assets/img/fotos/Paisagem/paisagem-1.jpeg" class="filter-pousada">
+            <a href="assets/img/fotos/Paisagem/paisagem-1.jpeg" class="filter isotope-item filter-paisagem" data-category="filter-paisagem">
               <img src="assets/img/fotos/Paisagem/paisagem-1.jpeg" alt="">
               <p>Frente da pousada 2</p>
             </a>
-            
-
+    
          </div> 
-
-
-
 
         </div>    
       </div>
@@ -131,7 +127,12 @@
    <script src="assets/js/main.js"></script>
    <script src="assets/js/galeria.js"></script> 
 
+   <!-- Isotope import  -->
+   <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
+
+  <!-- Light box JS import  -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script> 
 
    <script>
