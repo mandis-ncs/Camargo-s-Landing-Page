@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="assets/css/modal.css" />
     <link rel="stylesheet" href="assets/css/galeria.css" />
 
-
+    <!-- Css LightBox import -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"/>
 
     <title>Camargo's Pousada e Festas</title>
+    
+    <!-- Favicons -->
+    <link href="assets/img/camargo-icon.png" rel="icon">
+    <link href="assets/img/camargo-icon.png" rel="apple-touch-icon">
 
   </head>
 
@@ -79,15 +83,13 @@
       <div class="container mb-30">
 
         <div>
-
           <div id="filters" class="d-flex row center mb-20">
             <button data-filter="*" class="filter-button">Todos</button>
             <button data-filter=".filter-paisagem" class="filter-button">Paisagem</button>
             <button data-filter=".filter-pousada" class="filter-button">Pousada</button>
             <button data-filter=".filter-interior" class="filter-button">Interior</button>
           </div>
-
-          
+        
           <div class="gallery wrap" data-aos="fade-up" data-aos-delay="200">
             
     
@@ -108,7 +110,7 @@
             </a>
 
             <!-- FOTO 3 -->
-            <a href="assets/img/fotos/Paisagem/paisagem-2.jpeg" class="filter filter-pousada" data-category="filter-pousada">
+            <a href="assets/img/fotos/Paisagem/paisagem-2.jpeg" class="filter-paisagem filter" data-category="filter-pousada">
               <div class="col center">
                 <img src="assets/img/fotos/Paisagem/paisagem-2.jpeg" alt="">
                 <p></p>
@@ -146,12 +148,6 @@
       </div>
     </section>    
 
-  <!-- Modal -->
-    <div id="galleryModal" class="modal">
-        <span class="closeGallery" onclick="closeModal()">&times;</span>
-        <img id="modalImgGallery" src="" alt="">
-        <div id="caption"></div>
-    </div>
 
 
 
@@ -163,6 +159,10 @@
    <!-- JS import  -->
    <script src="assets/js/main.js"></script>
    <script src="assets/js/galeria.js"></script> 
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
 
   <!-- Light box JS import  -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script> 

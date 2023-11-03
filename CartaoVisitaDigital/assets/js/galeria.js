@@ -1,26 +1,26 @@
-    const galleryModal = document.getElementById("galleryModal");
-    const modalImg = document.getElementById("modalImgGallery");
-    const captionText = document.getElementById("caption");
-    const closeGallery = document.getElementById("closeGallery");
+document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll(".filter-button");
+  const gallery = document.querySelector(".gallery");
 
-    galleryModal.style.display = "none";
+  // Inicialize o Isotope
+  const iso = new Isotope(gallery, {
+    itemSelector: '.filter',
+    layoutMode: 'fitRows'
+  });
 
-    modalImg.src = imageSrc;
-    captionText.innerHTML = caption;
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const filterValue = button.getAttribute("data-filter");
 
-    modalImg.addEventListener("click", () => {
-        galleryModal.style.display = "flex"; // Exibe o modal quando o botão é clicado
-      });
-      
-      closeGallery.addEventListener("click", () => {
-        galleryModal.style.display = "none"; // Fecha o modal
-      });
-      
-      window.addEventListener("click", (event) => {
-        if (event.target === galleryModal) {
-            galleryModal.style.display = "none";
-        }
+      // Atualize o Isotope com o filtro selecionado
+      iso.arrange({
+        filter: filterValue
       });
 
-
-
+      // Remova a classe 'active' de todos os botões
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      // Adicione a classe 'active' ao botão atual
+      button.classList.add("active");
+    });
+  });
+});
