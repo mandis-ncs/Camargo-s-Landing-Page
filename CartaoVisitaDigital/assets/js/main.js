@@ -12,7 +12,7 @@ function copiarTexto(texto) {
 
 
 // MODAL SHARE BUTTON
-const modal = document.getElementById("share-modal");
+/*const modal = document.getElementById("share-modal");
 const shareButton = document.getElementById("share-button");
 const closeButton = document.getElementById("close-modal");
 
@@ -30,7 +30,7 @@ window.addEventListener("click", (event) => {
   if (event.target === modal) {
     modal.style.display = "none";
   }
-});
+});*/
 
 
 // MODAL QRCode

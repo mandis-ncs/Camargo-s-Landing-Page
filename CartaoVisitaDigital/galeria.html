@@ -23,44 +23,23 @@
 
   <body>
     <header class="row dark-blue-background">
-
-      <div class="mt-20 ml-20">
         <button class="green-shadow home-button center">
           <a href="index.html"> <!-- HOME  -->
             Home
           </a>
         </button>
-      </div>
-
-      <button id="share-button" data-modal-toggle> <!-- data-modal-toggle DO MODAL -->
-        <a href="#">
-          <img
-            src="assets/img/share-icon-blue-dark.png"
-            alt="Ícone de Compartilhar"
-          />
-        </a>
-      </button>
-      
     </header>
 
-    <!-- MODAL SHARE BUTTON -->
-    <div id="share-modal" class="modal">
-      <div class="modal-content">
-        <span class="close" id="close-modal">×</span>
-        <div>
-          <p>Compartilhar:</p>
-          <a href="#">Link</a> <br> <!-- Link 1 para compartilhar aqui -->
-          <a href="#">Link</a> <!-- Link 2 para compartilhar aqui -->
-        </div>
-      </div>
-    </div>
+    <section class="sec-btn-shr">
+      <button id="share-button"> <!-- data-toggle-->
+        <a href="#">
+          <img src="assets/img/share-icon-blue-dark.png" alt="Ícone de Compartilhar" />
+        </a>
+      </button>
+    </section>
     
-    
-    <main>
-    </main>
-
     <!-- Galeria title  -->
-    <div class="d-flex center row mt-30 mt-120 galeria-title">
+    <div class="d-flex center row mt-30 galeria-title">
       <img
         class="left-image"
         src="assets/img/detalhe-onda-linha.png"
@@ -90,11 +69,12 @@
             <button data-filter=".filter-interior" class="filter-button">Interior</button>
           </div>
         
-          <div class="gallery wrap" data-aos="fade-up" data-aos-delay="200">
-            
+          <div class="gallery wrap" data-aos="fade-up" data-aos-delay="200">    
     
             <!-- FOTO 1 -->
-            <a href="assets/img/fotos/Pousada/pousada-5.jpeg" class="filter filter-pousada border-round" data-category="filter-pousada">
+            <a href="assets/img/fotos/Pousada/pousada-5.jpeg" 
+               class="filter filter-pousada border-round" 
+               data-category="filter-pousada">
               <div class="col center">
                 <img src="assets/img/fotos/Pousada/pousada-5.jpeg" alt="">
                 <p></p>
@@ -158,8 +138,6 @@
     </section>    
 
 
-
-
     <footer>
       <img class="logo-rodape mt-20 mb-20" src="assets/img/camargos-logo-deitado.png" alt="Logo Camargos">      
     </footer>
@@ -168,12 +146,13 @@
    <!-- JS import  -->
    <script src="assets/js/main.js"></script>
    <script src="assets/js/galeria.js"></script> 
+   <script src="assets/js/share.js"></script>
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
 
 
-  <!-- Light box JS import  -->
+  <!-- LightBox JS import  -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script> 
 
    <script>

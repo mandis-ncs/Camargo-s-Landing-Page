@@ -18,34 +18,17 @@
   </head>
 
   <body>
-    <header>
-      <button id="share-button" data-modal-toggle> <!-- data-modal-toggle DO MODAL -->
+    <section class="sec-btn-shr">
+      <button id="share-button"> 
         <a href="#">
-          <img
-            src="assets/img/share-icon-blue-dark.png"
-            alt="Ícone de Compartilhar"
-          />
+          <img src="assets/img/share-icon-blue-dark.png" alt="Ícone de Compartilhar" />
         </a>
       </button>
-    </header>
-
-    <!-- MODAL SHARE BUTTON -->
-    <div id="share-modal" class="modal">
-      <div class="modal-content">
-        <span class="close" id="close-modal">×</span>
-        <div>
-          <p>Compartilhar:</p>
-          <a href="#">Link</a> <br> <!-- Link 1 para compartilhar aqui -->
-          <a href="#">Link</a> <!-- Link 2 para compartilhar aqui -->
-        </div>
-      </div>
-    </div>
-    
+    </section>
     
     <main>
       <!-- Parte com bg praia -->
       <section class="">
-
         <!-- Contatos -->
         <div class="image-background">
           <div class="container d-flex center col">
@@ -54,7 +37,7 @@
 
             <div class="mt-20">
               <button id="main-button" class="green-shadow green-button center">
-                <a href="https://api.whatsapp.com/send?phone=+5515991807613&text=Oii" target="_blank"> <!-- CONTATO AQUI  -->
+                <a href="https://api.whatsapp.com/send?phone=+5515991740290&text=Olá!" target="_blank"> <!-- CONTATO AQUI  -->
                   Contate-nos
                 </a>
               </button>
@@ -63,7 +46,7 @@
 
           <div class="row m-20 center">
             <button class="contact-button center">
-              <a href="https://api.whatsapp.com/send?phone=+5515991807613&text=Oii" target="_blank"> <!-- WHATSAPP AQUI  -->
+              <a href="https://api.whatsapp.com/send?phone=+5515991740290&text=Olá!" target="_blank"> <!-- WHATSAPP AQUI  -->
                 <img
                   class="contact-icon"
                   src="assets/img/whatsapp-icon-bege.png"
@@ -72,7 +55,7 @@
               </a>
             </button>
             <button class="contact-button center">
-              <a href="tel:+5515991807613"> <!-- CELULAR AQUI  -->
+              <a href="tel:+5515991740290"> <!-- CELULAR AQUI  -->
                 <img
                   class="contact-icon"
                   src="assets/img/telefone-icon-blue-soft.png"
@@ -108,7 +91,7 @@
 
           <div class="row m-20 center">
             <button class="more-button center" id="copiarPixButton"> 
-              <a class="center" href="#" onclick="copiarTexto('15991807613')"> <!-- PIX AQUI  -->
+              <a class="center" href="#" onclick="copiarTexto('15991740290')"> <!-- PIX AQUI  -->
                 <img src="assets/img/pix-icon-blue-soft.png" alt="Pix icon" /> 
                 <img src="assets/img/copiar-icon-bege.png" alt="Copiar icon" />
               </a>
@@ -170,7 +153,7 @@
       <div class="col center m-30">
         <div class="row center mb-20">
           <button class="other-button row px-10 center">
-            <a class="row center" href="vcard/Chacara.vcf"> <!-- VSF --- SALVAR NA AGENDA AQUI  -->
+            <a class="row center" href="vcard/Camargos.vcf"> <!-- VSF --- SALVAR NA AGENDA AQUI  -->
               <img src="assets/img/agenda-icon-bege.png" alt="Agenda icon" /> 
               <p>Salvar Contato</p>
             </a>
@@ -186,7 +169,7 @@
         <div id="qrcode-modal" class="modal">
           <div class="modal-content">
             <span class="close" id="close-qrcode-modal">×</span>
-            <img src="assets/img/qrcode-icon-bege.png" alt="QRCode" /> <!-- Imagem do QRCODE aqui -->
+            <img src="vcard/qr_camargos.png" alt="QRCode" /> <!-- Imagem do QRCODE aqui -->
           </div>
         </div>
         
@@ -197,6 +180,7 @@
 
     <!-- JS import  -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/share.js"></script>
 
   </body>
 </html>
